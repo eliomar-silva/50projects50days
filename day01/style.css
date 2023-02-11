@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+body {
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+}
+.frame {
+  height: 80vh;
+  width: 100%;  
+  display: flex; 
+  gap: 1.25em;
+  padding: 0 106px;
+}
+.frame div {
+  border-radius: 50px;
+  width: 7%;
+  transition: all .6s ease-in;
+  color: #fff;
+  cursor: pointer;
+}
+.frame div h3{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+}
+
+.frame .active {
+  width: 70%;
+  position: relative;
+  transition: all .6s ease-in;
+}
+.frame .active h3 { 
+  opacity: 1;
+  transition: opacity .5s ease-in 0.3s;  
+}
+
+.img-1 {
+  background-image: url(./img/explore.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.img-2 {
+  background-image: url(./img/wild.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-3 {
+  background-image: url(./img/sunny.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-4 {
+  background-image: url(./img/winter.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-5 {
+  background-image: url(./img/mountains.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
