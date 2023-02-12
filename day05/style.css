@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container .bg {
+  position: absolute;
+  background: url(./img/img-1.avif);  
+  background-position: center;  
+  background-size: cover;
+  height: calc(100vh + 60px);
+  width: calc(100vw + 60px); 
+  filter: blur(20px);
+}
+.container .loading {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+}
