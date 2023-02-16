@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4682B4;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+}
+.content {
+  background-color: #2A4E6C; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 50px;
+  border-radius: 5px;
+  color: #fff;
+}
+.content h1{
+  font-size: 40px;
+  margin: 30px 0 10px;
+  text-align: center; 
+}
+.content .input{ 
+  position: relative;
+  margin: 40px 0 52px;
+  width: 375px;
+}
+
+.content .input input{
+  display: block; 
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #ADD8E6;
+  color:  white;
+  font-size: 24px;  
+  padding: 18px 0px;
+}
+.content button{
+  width: 100%;
+  background-color: #A8D3E2;
+  border: none;
+  padding: 19px;
+  font-size: 20px;
+  font-weight: 100; 
+  border-radius: 6px;
+}
+.content h3{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin: 40px 0 20px;
+}
+.content a{
+  text-decoration: none;
+  color: #A8D3E2; 
+}
+
+.content .input label{
+  position: absolute;
+  top: 22px;
+  left: 0;
+  pointer-events: none;  
+}
+.content .input label span{
+  display: inline-block;
+  font-size: 22px;
+  transition: .3s cubic-bezier(.46,-0.37,.43,1.25) ;
+}
+.content input:focus + label span,
+.content input:valid + label span{
+  transform: translateY(-36px);
+  color: #ADD8E6;
+}
