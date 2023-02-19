@@ -5,17 +5,18 @@
 }
 body {
   font-family: sans-serif;
-  background: #F0F0F0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  
+  background: #F0F0F0;   
+  margin: 10px; 
+}
+.faq {
+  max-width: 600px;
+  margin: 0 auto;
 }
 .faq h1 {
   text-align: center;
   font-size: 31px;
   margin: 55px 0 30px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 .ask {
   border: 1px solid #1e1e1e6b;
@@ -24,9 +25,9 @@ body {
   padding: 32px 30px;
   margin: 18px 0;  
   overflow: hidden;
+
 }
 .ask h3{
-  width: 535px;
   font-size: 18px;
   font-weight: 600;
 }
