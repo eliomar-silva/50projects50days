@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #F0F0F0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+}
+.faq h1 {
+  text-align: center;
+  font-size: 31px;
+  margin: 55px 0 30px;
+  font-weight: 600;
+}
+.ask {
+  border: 1px solid #1e1e1e6b;
+  border-radius: 10px;
+  position: relative;
+  padding: 32px 30px;
+  margin: 18px 0;  
+  overflow: hidden;
+}
+.ask h3{
+  width: 535px;
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  display: none;
+}
+
+.button{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 35px;
+  right: 27px;
+  cursor: pointer;
+}
+.button .open i{
+  margin-left: 5.5px;
+  line-height: 1.6rem;
+}
+.button .close{
+  display: none;
+  color: #a7a7a7;
+  font-size: 30px;
+}
+
+.active p { 
+  display: block;
+  margin-top: 32px;
+  font-size: 16px;
+}
+.ask.active { 
+  background: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+.ask.active::after,
+.ask.active::before  { 
+  font-family: "Font Awesome 5 Free"; font-weight: 500; content: "\f075";
+  font-size: 110px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  color: rgb(144, 238, 191);
+  opacity: 0.4;
+}
+.ask.active::before { 
+  top: -5px;
+  left: -30px;
+  color: #3498db;
+  opacity: 0.2;
+  transform: rotateY(180deg);
+}
+
+.active .button{ 
+  top: 30px;
+  right: 33px;  
+}
+
+.active .button .close{
+  display: initial;
+}
+.active .button .open{
+  display: none;
+}
