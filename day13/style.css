@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2B88F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+section {
+  width: 500px;
+}
+section h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 19px;
+  word-spacing: -.1ch;
+  padding: 0 15px;
+  line-height: 1.5rem;
+}
+section textarea {
+ width: 100%;
+ padding: 10px;
+ font-size: 16px;
+ height: 100px;
+ word-spacing: -.6ch;
+ margin-bottom: 20px;
+}
+.tag {
+  background-color: #f0932b ;
+  color: white;
+  padding:10px 20px;
+  border-radius: 20px;
+  margin-right: 6px;
+  font-size: 15px; 
+}
+.active {
+  background-color: #31457B; 
+}
