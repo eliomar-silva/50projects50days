@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.btn {
+  background-color: purple;
+  color: white;
+  padding: 20px 30px; 
+  border: 1px solid purple; 
+  font-size: 14px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.circle {
+  background-color: white;
+  height: 100px ;
+  width: 100px;
+  position: absolute;  
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale .5s ease-out;
+}
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%)  scale(3);
+    opacity: 0;
+  }
+}
