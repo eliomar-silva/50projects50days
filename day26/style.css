@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slider-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.slide-left {
+  height: 100%;
+  position: absolute;
+  top: -300vh;
+  left: 0;
+  width: 35%;
+  transition: transform .5s ease-in-out;
+}
+.slide-left div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; 
+}
+.slide-left div h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+.slide-left div:nth-child(1) {
+  background-color:  #FD3555 ;
+}
+.slide-left div:nth-child(2) {
+  background-color:  #2A86BA;
+}
+.slide-left div:nth-child(3) {
+  background-color: #252E33 ;
+}
+.slide-left div:nth-child(4) {
+  background-color: #FFB866 ;
+}
+.slide-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 65%;  
+  transition: transform .5s ease-in-out;
+}
+.slide-right div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.button-container {
+  position: relative;
+  top: 50%;
+  left: 35%;
+}
+.button-container button{
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  padding: 12px 15px;
+  border: none;
+  color: #aaa;
+  background-color: white;
+  cursor: pointer;
+}
+.button-container .down-btn{
+  left: -44px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.button-container .up-btn{
+  top: -48px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+button:hover {
+  color: #222;
+}
