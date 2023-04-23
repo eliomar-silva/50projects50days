@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FEF9F2;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 372px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.container h2 {
+  font-size: 0.9rem;
+  line-height: 20px;
+  width: 250px;
+}
+.container i {
+  font-size: 1.9rem;
+  color: red; 
+}
+.container p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+.container .thank {
+  margin: 10px 0 20px;
+}
+.container .thank + h2 {
+  margin-bottom: 15px;
+}
+.container .choices {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 27px 0;
+}
+
+.container .choices div {  
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .choices div.active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
+}
+.container .choices h3 {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.container button {
+  background-color: #302D2B;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: none;
+}
