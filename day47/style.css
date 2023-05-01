@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 768px;
+  border-radius: 15px;
+  background: #476CE4;
+  color: #fff;
+  padding: 60px 80px;
+  position: relative;
+}
+.container .progress-bar{
+  background-color: #fff;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 15px;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+.container .fa-solid{
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 38px;
+  position: absolute;
+  top: 70px;
+}
+.container .fa-solid.fa-quote-right{
+  left: 35px;
+}
+.container .fa-solid.fa-quote-left{
+  right: 35px;
+}
+.container .testimonial{
+  line-height: 1.75rem;
+  text-align: justify; 
+}
+.container .user{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 20px;
+}
+.container .user img{
+ border-radius: 50%;
+ width: 75px;
+ height: 75px;
+ object-fit: cover;
+}
+.container .user .user-details {
+  margin-left: 10px; 
+}
+.container .user .user-details h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
