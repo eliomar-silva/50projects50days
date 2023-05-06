@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;  
   color: #fff;
+  overflow: hidden;
 }
 h1 {
   margin: 28px 0;
@@ -32,4 +33,45 @@ h1 {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  transition: margin .5s ease-out;
+}
+.screen.up {
+margin-top: -100vh;
+
+}
+.insect-list-btn {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 17px 0;
+}
+.insect-list-btn li {
+  margin: 10px; 
+}
+.insect-list-btn .choose-insect-btn{
+  font-family: inherit;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.insect-list-btn .choose-insect-btn:focus{
+  outline: none;
+}
+
+.choose-insect-btn p{ 
+  margin: 1em 0;
+}
+.choose-insect-btn img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.insect-list-btn .choose-insect-btn:hover{
+  background-color: #fff;
+  color: #516DFF;
 }
